@@ -4,9 +4,11 @@ import com.sarangi.profiles.springprofilesexample.model.Employee;
 import com.sarangi.profiles.springprofilesexample.repository.EmployeeRepository;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Component
 public class DBWriter implements ItemWriter<Employee> {
     @Autowired
     EmployeeRepository employeeRepository;
